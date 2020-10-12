@@ -15688,7 +15688,7 @@ mxPopupMenu.prototype.createSubmenu = function(parent)
 	img.setAttribute('src', this.submenuImage);
 	
 	// Last column of the submenu item in the parent menu
-	td = parent.firstChild.nextSibling.nextSibling;
+	var td = parent.firstChild.nextSibling.nextSibling;
 	td.appendChild(img);
 };
 
@@ -51193,8 +51193,8 @@ var mxEdgeStyle =
 			if (((horPref[0] & portConstraint[0]) > 0)
 					&& ((vertPref[1] & portConstraint[1]) > 0))
 			{
-				prefOrdering[0][0] = horPref[0];
-				prefOrdering[0][1] = vertPref[0];
+				prefOrdering[0][0] = vertPref[0];
+				prefOrdering[0][1] = horPref[0];
 				prefOrdering[1][0] = vertPref[1];
 				prefOrdering[1][1] = horPref[1];
 				preferredOrderSet = true;
