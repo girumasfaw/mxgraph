@@ -1321,8 +1321,8 @@ var mxEdgeStyle =
 			if (((horPref[0] & portConstraint[0]) > 0)
 					&& ((vertPref[1] & portConstraint[1]) > 0))
 			{
-				prefOrdering[0][0] = horPref[0];
-				prefOrdering[0][1] = vertPref[0];
+				prefOrdering[0][0] = vertPref[0];
+				prefOrdering[0][1] = horPref[0];
 				prefOrdering[1][0] = vertPref[1];
 				prefOrdering[1][1] = horPref[1];
 				preferredOrderSet = true;
